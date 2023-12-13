@@ -3,8 +3,8 @@
 @section('title', 'Home')
 
 @section('body')
-    <section
-        class="hero-back xl:bg-[length:100%_100%] bg-center object-cover px-4 bg-[#F8F9FC] dark:bg-[#191919]">
+    {{-- hero section --}}
+    <section class="hero-back-img xl:bg-[length:100%_100%] bg-center object-cover px-4 bg-[#F8F9FC] dark:bg-[#191919]">
         <div class="container flex justify-between md:items-center md:pt-0 pt-[120px] mx-auto lg:h-[760px] h-[640px]">
             <div class="md:max-w-[534px] w-full">
                 <h1
@@ -29,6 +29,16 @@
             </div>
             <div class="w-full xl:block hidden"></div>
         </div>
+    </section>
+
+    {{-- benifits section --}}
+    <section>
+        @livewire('section.benifits')
+    </section>
+
+    {{-- server section --}}
+    <section>
+        @livewire('section.server')
     </section>
 @endsection
 

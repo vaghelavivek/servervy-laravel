@@ -45,6 +45,10 @@ body {
 	background: #555;
   }
 
-  .hero-back {
+  .hero-back-img {
     background-image: url('../images/grad1.png');
+  }
+
+  .server-back-img {
+    background-image: url('../images/grad2.png');
   }
