@@ -7,6 +7,9 @@ use Livewire\Component;
 class Slider extends Component
 {
 
+    public $mobileServerList;
+    public $desktopServerList;
+
     public $serverList = [
         [
             'svg' => 'images/svgs/window.svg',
@@ -45,12 +48,30 @@ class Slider extends Component
         ],
     ];
 
-    // public function slideLeft() {
-    //     $pushData = array_pop($this->serverList);
-    // }
+    public function slideRight()
+    {
+        array_unshift($this->serverList, array_pop($this->serverList));
+    }
+
+    public function slideLeft()
+    {
+        array_push($this->serverList, array_shift($this->serverList));
+    }
 
     public function render()
     {
+        $this->mobileServerList = collect($this->serverList)->filter(
+            function ($curr, $ind) {
+                return $ind < 3;
+            }
+        );
+        $this->desktopServerList = collect($this->serverList)->filter(
+            function ($curr, $ind) {
+                return $ind < 7;
+            }
+        );;
+
+
         return view('livewire.slider');
     }
 }

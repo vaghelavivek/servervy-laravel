@@ -37,9 +37,11 @@
     </section>
 
     {{-- server section --}}
-    <section>
-        @livewire('section.server')
-    </section>
+    @livewire('section.server')
+    
+    {{-- feedback section --}}
+    @livewire('section.feedback')
+
 @endsection
 
 {{-- bg-[url('{{ asset("images/grad1.png") }}')] --}}

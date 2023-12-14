@@ -1,6 +1,6 @@
 @font-face {
-    font-family: Helvetica;
-    src: url(../fonts/HelveticaNowDisplay-Medium.woff2);
+  font-family: Helvetica;
+  src: url(../fonts/HelveticaNowDisplay-Medium.woff2);
 }
 
 *,
@@ -13,42 +13,68 @@
 }
 
 body {
-    font-family: Helvetica;
-    min-height: 100vh;
-    transition: color 0.5s, background-color 0.5s;
-    line-height: 1.6;
-    font-size: 15px;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  font-family: Helvetica;
+  min-height: 100vh;
+  transition: color 0.5s, background-color 0.5s;
+  line-height: 1.6;
+  font-size: 15px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 ::-webkit-scrollbar {
-	width: 8px;
-	height: 5px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-	background: #eee;
-	border-radius: 5px;
-  }
-  
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-	background: #aaa;
-	border-radius: 5px;
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-	background: #555;
-  }
+  width: 8px;
+  height: 5px;
+}
 
-  .hero-back-img {
-    background-image: url('../images/grad1.png');
-  }
+/* Track */
+::-webkit-scrollbar-track {
+  background: #eee;
+  border-radius: 5px;
+}
 
-  .server-back-img {
-    background-image: url('../images/grad2.png');
-  }
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #aaa;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.hero-back-img {
+  background-image: url('../images/grad1.png');
+}
+
+.server-back-img {
+  background-image: url('../images/grad2.png');
+}
+
+.feedback-back-img {
+  background-image: url('../images/grad3.png');
+}
+
+.feedtext {
+  position: relative;
+  z-index: 10;
+  font-weight: 700;
+  color: transparent;
+  background-clip: text;
+  background: linear-gradient(123deg,
+      #308efd 2.08%,
+      #1ebcca 54.17%,
+      #0ee39d 99.48%);
+  -webkit-background-clip: text;
+}
+
+.active-feedback {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0.75rem;
+  background-color: #ffffff !important;
+  ;
+}
