@@ -42,6 +42,24 @@
     {{-- feedback section --}}
     @livewire('section.feedback')
 
+    {{-- {{ price list section }} --}}
+    @livewire('section.price-list')
+
+    {{-- performance section --}}
+    @livewire('section.performance')
+
+    {{-- deploye section --}}
+    @livewire('section.deploye')
+
+    {{-- feature section --}}
+    @livewire('section.features')
+
+    {{-- auto install section --}}
+    @livewire('section.auto-install')
+
+    {{-- support section --}}
+    @livewire('section.support')
+
 @endsection
 
 {{-- bg-[url('{{ asset("images/grad1.png") }}')] --}}

@@ -8,8 +8,13 @@ class DropdownCard extends Component
 {
 
 
-    public function __construct(public $list = [], public $title = '')
-    {
+    public function __construct(
+        public $list = [],
+        public $title = '',
+        public $backBlack = 1000,
+        public $backActive = 1,
+        public $bgColor = "backdrop-blur-[25px] bg-[#f8f9fc26] dark:bg-transparent"
+    ) {
     }
 
     public $isDropdownOpen = 0;
@@ -23,7 +28,8 @@ class DropdownCard extends Component
         }
     }
 
-    public function dropdownClose() {
+    public function dropdownClose()
+    {
         $this->isDropdownOpen = 0;
     }
 

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="" >
+<html lang="en" id="html" >
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,10 +10,8 @@
     <link rel="stylesheet" href="{{ asset('css/main.css') }}">
     <title>Server_vy | @yield('title')</title>
 </head>
-<body class="dark:bg-black" >
-    <header class="fixed top-0 w-full z-50 px-4" >
-        @livewire('navbar')
-    </header>
+<body class="dark:bg-[#1C1D20]" >
+    @livewire('navbar')
     @yield('body')
     @livewireScripts
 </body>

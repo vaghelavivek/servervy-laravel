@@ -57,6 +57,30 @@ body {
   background-image: url('../images/grad3.png');
 }
 
+.price-list-back-img {
+  background-image: url('../images/grad4.png');
+}
+
+.performance-back-img {
+  background-image: url('../images/grad5.png');
+}
+
+.deploye-back-img {
+  background-image: url('../images/grad6.png');
+}
+
+.auto-install-back-img {
+  background-image: url('../images/bg-auto-install.png');
+}
+
+.support-back-img {
+  background-image: url('../images/support.png');
+}
+
+.icon-translate {
+  transform: translateX(100%);
+}
+
 .feedtext {
   position: relative;
   z-index: 10;
@@ -77,4 +101,21 @@ body {
   border-radius: 0.75rem;
   background-color: #ffffff !important;
   ;
+}
+
+.active-list :is(h2, p, del) {
+  color: white !important;
+}
+
+.active-list {
+  background-color: rgb(2, 109, 235) !important ;
+}
+
+.active-list .feature {
+  background-color: #ffffff14 !important;
+}
+
+.active-list .offer {
+  background-color: white !important;
+  color: black !important;
 }
