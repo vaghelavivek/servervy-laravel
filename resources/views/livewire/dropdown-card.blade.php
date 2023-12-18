@@ -21,7 +21,7 @@
                 class="absolute sm:left-0 left-0 origin-top-right rounded-md bg-white border-light-white-blue dark:border-light-white-blue-8 border dark:bg-[#323235] w-full lg:w-52 lg:mt-6 mt-4 z-50 {{ $isDropdownOpen == 0 ? 'hidden' : '' }} ">
                 <ul class="p-1.5">
                     @foreach ($list as $link)
-                        <a href="#">
+                        <a href="{{ $link['to'] == '#' ? '#' : Route($link['to'])}}">
                             <li
                                 class="py-1.5 px-2 dark:text-white hover:bg-light-white dark:hover:bg-light-white-8 rounded-[8px]">
                                 {{ $link['name'] }}

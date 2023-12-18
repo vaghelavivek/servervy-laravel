@@ -15,8 +15,8 @@
             <ul
                 class="xl:flex xl:static rounded-[12px] xl:p-0 p-4 xl:bg-transparent bg-white absolute top-[75px] left-0 right-0 xl:w-auto [&>li]:xl:mx-3  [&>li>a]:text-[15px]  [&>li>a]:font-medium [&>li]:xl:mb-0 [&>li]:mb-5 [&>li:last-child]:mb-0 dark:bg-[#252629E5] dark:xl:bg-transparent xl:border-0 border border-white-8 xl:shadow-none shadow-black-35 {{ $isShowMobileNavbarShow ? '' : 'hidden' }} ">
 
-                @livewire('dropdown-card', ['list' => [['name' => 'Policy', 'to' => '#'], ['name' => 'Register Domain']], 'title' => 'Cloud Servers' , 'backActive' => $backActive , 'bgColor' => $bgColor, 'backBlack' => $backBlack])
-                @livewire('dropdown-card', ['list' => [['name' => 'Dedicated', 'to' => '#'], ['name' => 'Blog'], ['name' => 'Abuse'], ['name' => 'About'], ['name' => 'Glass'], ['name' => 'Policy']], 'title' => 'Dedicated Servers' ,'backActive' => $backActive , 'bgColor' => $bgColor, 'backBlack' => $backBlack])
+                @livewire('dropdown-card', ['list' => [['name' => 'Policy', 'to' => '#'], ['name' => 'Register Domain' , 'to' => '#']], 'title' => 'Cloud Servers' , 'backActive' => $backActive , 'bgColor' => $bgColor, 'backBlack' => $backBlack])
+                @livewire('dropdown-card', ['list' => [['name' => 'Dedicated', 'to' => 'dedicated'], ['name' => 'Blog' , 'to' => '#'], ['name' => 'Abuse' , 'to' => '#'], ['name' => 'About' , 'to' => '#'], ['name' => 'Glass' , 'to' => '#'], ['name' => 'Policy' , 'to' => '#']], 'title' => 'Dedicated Servers' ,'backActive' => $backActive , 'bgColor' => $bgColor, 'backBlack' => $backBlack])
                 @livewire('dropdown-card', ['list' => [['name' => 'Policy', 'to' => '#']], 'title' => 'Storage Servers' , 'backActive' => $backActive , 'bgColor' => $bgColor, 'backBlack' => $backBlack])
                 @livewire('dropdown-card', ['title' => 'Help Center' , 'backActive' => $backActive , 'bgColor' => $bgColor, 'backBlack' => $backBlack])
 

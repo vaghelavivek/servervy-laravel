@@ -1,7 +1,6 @@
 <div>
     @foreach ($priceList as $list)
-        <div class="flex lg:flex-row flex-col items-start gap-8 my-4 md:p-6 p-5 rounded-[14px] bg-white dark:bg-white-8 dark:border-b-0 border-b-[#E1E1E1] border-b border-solid cursor-pointer {{ $activePriceList == $loop->index ? 'active-list' : '' }}"
-            wire:click="activePriceListIndex({{ $loop->index }})">
+        <div class="flex lg:flex-row flex-col items-start gap-8 my-4 md:p-6 p-5 rounded-[14px] bg-white dark:bg-white-8 dark:border-b-0 border-b-[#E1E1E1] border-b border-solid cursor-pointer group hover:bg-[#026deb]">
             <div class="flex items-center gap-5">
                 <h2 class="text-dark dark:text-white md:text-5xl text-[42px] font-bold leading-[110%]">
                     ${{ number_format($list['price'], 2) }}
@@ -32,7 +31,7 @@
 
                 <div class="grid md:grid-cols-4 grid-cols-2 md:gap-5 gap-y-4 gap-x-3.5">
                     <div class="flex items-center">
-                        <div class="p-1.5 rounded-md bg-[#1f202214] dark:bg-white-8 feature">
+                        <div class="p-1.5 rounded-md bg-[#1f202214] dark:bg-white-8 group-hover:bg-[#ffffff14]">
                             <img src="{{ asset('images/svgs/cpu.svg') }}"
                                 class="md:min-w-[15px] min-w-[12px] {{ $activePriceList == $loop->index ? 'brightness-[100]' : 'dark:brightness-[100]' }}"
                                 alt="CPU">
@@ -42,7 +41,7 @@
                             {{ $list['cores'] }} vCores</p>
                     </div>
                     <div class="flex items-center">
-                        <div class="p-1.5 rounded-md bg-[#1f202214] dark:bg-white-8 feature">
+                        <div class="p-1.5 rounded-md bg-[#1f202214] dark:bg-white-8 group-hover:bg-[#ffffff14]">
                             <img src="{{ asset('images/svgs/ram-overview.svg') }}"
                                 class="md:min-w-[15px] min-w-[12px] {{ $activePriceList == $loop->index ? 'brightness-[100]' : 'dark:brightness-[100]' }}"
                                 alt="CPU">
@@ -52,7 +51,7 @@
                             {{ $list['ram'] }} GB RAM</p>
                     </div>
                     <div class="flex items-center">
-                        <div class="p-1.5 rounded-md bg-[#1f202214] dark:bg-white-8 feature">
+                        <div class="p-1.5 rounded-md bg-[#1f202214] dark:bg-white-8 group-hover:bg-[#ffffff14]">
                             <img src="{{ asset('images/svgs/storage.svg') }}"
                                 class="md:min-w-[15px] min-w-[12px] {{ $activePriceList == $loop->index ? 'brightness-[100]' : 'dark:brightness-[100]' }}"
                                 alt="CPU">
@@ -62,7 +61,7 @@
                             {{ $list['nvme'] }} GB NVMe</p>
                     </div>
                     <div class="flex items-center">
-                        <div class="p-1.5 rounded-md bg-[#1f202214] dark:bg-white-8 feature">
+                        <div class="p-1.5 rounded-md bg-[#1f202214] dark:bg-white-8 group-hover:bg-[#ffffff14]">
                             <img src="{{ asset('images/svgs/bandwidth.svg') }}"
                                 class="md:min-w-[15px] min-w-[12px] {{ $activePriceList == $loop->index ? 'brightness-[100]' : 'dark:brightness-[100]' }}"
                                 alt="CPU">

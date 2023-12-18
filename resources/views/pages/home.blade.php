@@ -60,6 +60,9 @@
     {{-- support section --}}
     @livewire('section.support')
 
+    {{-- blog section --}}
+    @livewire('section.blog')
+
 @endsection
 
 {{-- bg-[url('{{ asset("images/grad1.png") }}')] --}}

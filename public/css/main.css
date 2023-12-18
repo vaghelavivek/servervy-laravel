@@ -65,6 +65,14 @@ body {
   background-image: url('../images/grad5.png');
 }
 
+.vps-back-img {
+  background-image: url('../images/grad-vps.png');
+}
+
+.choose-server-back-img {
+  background-image: url('../images/choose-grad.png');
+}
+
 .deploye-back-img {
   background-image: url('../images/grad6.png');
 }
@@ -75,6 +83,10 @@ body {
 
 .support-back-img {
   background-image: url('../images/support.png');
+}
+
+.dedicated-hero-back-img {
+  background-image: url('../images/d-hero-shad.png');
 }
 
 .icon-translate {
@@ -118,4 +130,18 @@ body {
 .active-list .offer {
   background-color: white !important;
   color: black !important;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
